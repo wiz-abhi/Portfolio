@@ -33,3 +33,23 @@ menuIcon.classList.remove('fa-xmark');
 navbar.classList.remove('active');
 
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(document.getElementById('contactForm'));
+
+    fetch('submit.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert('Form submitted successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Form submission failed!');
+    });
+});
+
+
