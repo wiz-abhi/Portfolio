@@ -57,7 +57,7 @@
     <h2 class="heading">ABOUT <span>Me</span></h2>
 <h3>Web Developer</h3>
 <p>Hello! I'm a dedicated and passionate first-year BTech student, with a keen interest in technology and a strong commitment to my goals. My journey in the tech world is driven by a relentless curiosity and a desire to make a significant impact</p>
-<a href="#" class="btn">Read more</a>
+<a href="#portfolio" class="btn">Read more</a>
 </div>
  </section>
 
@@ -69,20 +69,20 @@
     <i class="fa-solid fa-code"></i>
     <h3>Frontend Development</h3>
     <p>Skilled in crafting intuitive user interfaces with HTML, CSS, and JavaScript, bootstrap ensuring seamless user experiences</p>
-    <a href="" class="btn">Read More</a>
+    <a href="#portfolio" class="btn">Read More</a>
 </div>
 
 <div class="services-box">
     <i class="fa-solid fa-code"></i>
     <h3>Backend Development</h3>
     <p>Exploring server-side development with Python, learning to build basic applications and databases to support dynamic websites</p>
-    <a href="" class="btn">Read More</a>
+    <a href="#portfolio" class="btn">Read More</a>
 </div>
 <div class="services-box">
     <i class="fa-brands fa-java"></i>
     <h3>Java</h3>
     <p>Expertise in utilizing Java for various applications, from web development to data analysis, and efficiency to solve complex problems</p>
-    <a href="" class="btn">Read More</a>
+    <a href="#portfolio" class="btn">Read More</a>
 </div>
 </div>
  </section>
@@ -111,30 +111,27 @@
     <a href="#home">  <i class="fa-sharp fa-solid fa-up-right-from-square"> </i></a>
     </div>
     </div>
-
-   
- 
-
 </div>
  </section>
 <!-- CONTACT DETAILS  -->
 <section class="contact" id="contact">
 <h2 class="heading">Contact <span>Me</span></h2>
 
-<form id="contactForm">
+<form id="contactForm" action="submit.php" method="POST">
     <div class="input-box">
-        <input type="text" id="fullName" placeholder="Full name" required>
-        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" name="fullName" id="fullName" placeholder="Full name" required>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
     </div>
     <div class="input-box">
-        <input type="number" id="mobileNumber" placeholder="Mobile Number" required>
-        <input type="text" id="emailSubject" placeholder="Email Subject" required>
+        <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number" required>
+        <input type="text" name="emailSubject" id="emailSubject" placeholder="Email Subject" required>
     </div>
     <div>
-        <textarea id="message" rows="10" cols="30" placeholder="Your Message" required></textarea>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Your Message" required></textarea>
         <input type="submit" value="Send Message" class="btn">
     </div>
 </form>
+
 
 </section>
 <!-- Footer -->
